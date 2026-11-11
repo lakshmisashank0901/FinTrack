@@ -1,0 +1,8 @@
+.venv
+.localdb
+.pytest_cache
+.ruff_cache
+__pycache__
+tests
+scripts
+.env

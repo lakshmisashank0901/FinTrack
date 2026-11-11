@@ -1,0 +1,9 @@
+line-length = 125
+target-version = "py312"
+
+[lint]
+select = ["E", "F", "W", "I", "B", "UP", "S"]
+ignore = ["S101", "S608", "S311", "B008", "B006"]  # test asserts; SQL only interpolates whitelisted column names; demo RNG is not crypto; FastAPI defaults
+
+[lint.per-file-ignores]
+"tests/*" = ["S", "E501"]
